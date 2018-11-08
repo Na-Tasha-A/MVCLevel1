@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Lesson1_UserDetailsEmpty.Models.EmployeeView>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8"/>
+    <title>Index</title>
+</head>
+<body>
+    <table>
+    @foreach (var item in Model)
+    {
+        <tr>
+        <td>@item.FirstName</td>
+        <td>@item.SurName</td>
+        <td>@Html.ActionLink("Детали", "Details", new {id = item.id})</td>
+        </tr>
+    }
+    </table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿@model Lesson1_UserDetailsEmpty.Models.EmployeeView
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8"/>
+    <title>Details</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Имя</td>
+            <td>@Model.FirstName</td>
+        </tr>
+        <tr>
+            <td>Фамилия</td>
+            <td>@Model.SurName</td>
+        </tr>
+        <tr>
+            <td>Отчество</td>
+            <td>@Model.Patronymic</td>
+        </tr>
+        <tr>
+            <td>Возраст</td>
+            <td>@Model.Age</td>
+        </tr>
+        <tr>
+            <td>Дата рождения</td>
+            <td>@Model.BirthDate</td>
+        </tr>
+        <tr>
+            <td>Должность</td>
+            <td>@Model.Position</td>
+        </tr>
+        <tr>
+            <td>Отдел</td>
+            <td>@Model.Unit</td>
+        </tr>
+        </table>
+
+        <p>@Html.ActionLink("Список", "Index")</p>
+
+</body>
+</html>
